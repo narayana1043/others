@@ -40,7 +40,7 @@ app_install(){
 		
 		# downloading software 
 		
-#		wget $1
+		wget $1
 		
 		# procedure for deb extension installation
 		
