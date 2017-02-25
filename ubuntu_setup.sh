@@ -93,7 +93,7 @@ app_install(){
 	sleep 3s
 }
 
-# Programs to Install
+## Programs to Install
 
 pkg_install 'gedit-plugins'
 pkg_install 'gdebi'
@@ -220,6 +220,35 @@ sudo chmod -R a+rwx ~/
 cd ~
 echo "Spark Installation and setup completed"
 sleep 2s
+
+# 10. Latex "texlive-latex-base" and "texstudio"
+
+echo "************************************"
+echo "Installing texlive-latex-base only"
+echo "************************************"
+echo "This is not same as texlive-full and has libraries that mostly frequently used or required. However the libraries can be installed at a later point based on needs."
+echo "sudo apt install texlive-latex-base"
+sleep 4s
+pkg_install 'texlive-latex-base'
+echo "************************************"
+echo "Tex live installation done"
+echo "************************************"
+sleep 2s
+echo ""
+echo "************************************"
+echo "Installing texstudio"
+echo "************************************"
+sleep 1s
+echo "sudo apt-get install texstudio"
+pkg_install 'texstudio'
+echo "************************************"
+echo "Tex Studio installation done"
+echo "************************************"
+sleep 2s
+echo ""
+
+# 11. Google Drive 
+# TODO::
 
 # Final Steps
 
