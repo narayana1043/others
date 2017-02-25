@@ -294,10 +294,14 @@ echo "Pycharm Information: go to tools--> Add desktop Entry"
 sleep 3s
 sudo /opt/pycharm/bin/pycharm.sh
 read -p "Press any key to continue... " -n1 -s
+echo '**********************************************************'
+echo ''
 
 # 2. R Studio
 
- echo "R Studio Information: Auto added as Desktop Entry"
+echo "R Studio Information: Auto added as Desktop Entry"
+echo '**********************************************************'
+echo ''
 
 # 3. VirtualEnv
 
@@ -306,6 +310,8 @@ read -p "Press any key to continue... " -n1 -s
 echo "1. cd ~"
 echo "2. workon env_i524"
 read -p "Press any key to continue... " -n1 -s
+echo '**********************************************************'
+echo ''
 
 # 4. IPython and spark integration
 
@@ -313,11 +319,24 @@ echo "Check for IPython and spark integration"
 echo "1. cd ~"
 echo "2. ipython --profile=pyspark"
 read -p "Press any key to continue... " -n1 -s
+echo '**********************************************************'
+echo ''
 
 # 5. Check your alsamixer settings
+
 echo "General Audio check"
 echo "Set all HP/Speak -- MM --> 00"
 read -p "Press any key to continue... " -n1 -s
+echo '**********************************************************'
+echo ''
+
+# 6. SSH setup for github
+
+echo "Generating SSH Keys for github"
+echo "Provide all the information requested"
+ssh-keygen -t rsa -b 4096 -C "narayana1043@gmail.com"
+cat /home/veera/.ssh/id_rsa.pub
+
 
 # Deleting unwanteds
 
