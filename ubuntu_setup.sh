@@ -1,10 +1,10 @@
 #!/bin/bash
 
-## welcome note
+# welcome note
 echo "Working on your request"
 
 
-## Function to install your packages
+# Function to install your packages
 pkg_install(){
 	echo "******************************************"
 	printf "installing $1 \n"
@@ -19,7 +19,7 @@ pkg_install(){
 }
 
 
-## Function to Download and Install Applications
+# Function to Download and Install Applications
 app_install(){
 	cd ~/Downloads
 		
@@ -93,7 +93,7 @@ app_install(){
 	sleep 3s
 }
 
-## Programs to Install
+# Programs to Install
 
 pkg_install 'gedit-plugins'
 pkg_install 'gdebi'
@@ -247,8 +247,36 @@ echo "************************************"
 sleep 2s
 echo ""
 
-# 11. Google Drive 
-# TODO::
+# 11. Cloning other github repos
+
+cd ~/code
+echo ''
+echo "************************************"
+echo "cloning the following repos into ~/code"
+echo "************************************"
+echo "1. ubuntu_autosetup"
+echo "2. Bigdata"
+sleep 2s
+git clone https://github.com/narayana1043/ubuntu_autosetup
+chmod 775 -R ubuntu_autosetup
+git clone https://github.com/narayana1043/Bigdata
+echo "************************************"
+echo 'Finished cloning'
+echo "************************************"
+sleep 2s
+
+# 12. Installing Google drive for Ubuntu
+
+echo "************************************"
+echo 'Installing Google drive for Ubuntu'
+echo "************************************"
+sudo apt-add-repository ppa:nilarimogard/webupd8 -y
+sudo apt-get update
+pkg_install 'grive'
+
+echo "************************************"
+echo 'Google Drive Installed'
+echo "************************************"
 
 # Final Steps
 
@@ -286,6 +314,11 @@ echo "1. cd ~"
 echo "2. ipython --profile=pyspark"
 read -p "Press any key to continue... " -n1 -s
 
+# 5. Check your alsamixer settings
+echo "General Audio check"
+echo "Set all HP/Speak -- MM --> 00"
+read -p "Press any key to continue... " -n1 -s
+
 # Deleting unwanteds
 
 echo "****************************************"
@@ -310,3 +343,21 @@ sleep 2s
 echo "Running apt-get upgrade"
 sudo apt-get upgrade
 sleep 2s
+
+ Long Job to be done at the end
+
+echo "****************************************"
+echo "****************************************"
+echo "****************************************"
+echo "****************************************"
+echo "IMPORTANT NOTE"
+echo "Syncing google drive"
+echo "This might take a long time"
+echo "****************************************"
+echo "****************************************"
+echo "****************************************"
+echo 5s
+cd ~
+mkdir gdrive
+cd ~/gdrive
+grive -a
