@@ -100,6 +100,7 @@ pkg_install 'gedit-plugins'
 pkg_install 'gdebi'
 pkg_install 'jabref'
 pkg_install 'emacs'
+pkg_install 'shutter'
 
 
 # 1. Google Chrome Download and Install
