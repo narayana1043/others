@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# super-user permissions required
 # welcome note
 echo "Working on your request"
 
@@ -97,6 +98,8 @@ app_install(){
 
 pkg_install 'gedit-plugins'
 pkg_install 'gdebi'
+pkg_install 'jabref'
+pkg_install 'emacs'
 
 
 # 1. Google Chrome Download and Install
@@ -127,13 +130,13 @@ app_install $(echo $url)
 
 pkg_install 'git'
 
-# configuring up user name and email
-echo 'git config --global user.name "Veera Marni"' 
-sleep 1s
-git config --global user.name "Veera Marni"
-echo 'git config --global user.email "narayana1043@gmail.com"' 
-sleep 1s
-git config --global user.email "narayana1043@gmail.com"
+## configuring up user name and email
+#echo 'git config --global user.name "Veera Marni"' 
+#sleep 1s
+#git config --global user.name "Veera Marni"
+#echo 'git config --global user.email "narayana1043@gmail.com"' 
+#sleep 1s
+#git config --global user.email "narayana1043@gmail.com"
 
 
 # 5. Python PIP and VirtualEnv Setup
@@ -152,33 +155,33 @@ source ~/.bashrc
 source ~/.virtualenvs/env_i524/bin/activate
 cd ~/code/classes
 pip install --upgrade pip
-pip install -r requirements.txt
 source ~/.virtualenvs/env_i524/bin/deactivate
+sudo chmod -R 775 ~/.virtualenvs
 echo "***Setting up python virtualenv Done**"
 sleep 2s
 
-# 6. Big Data Class setup
+## 6. Big Data Class setup
 
-echo "Cloning Big Data class repo"
-sleep 1s
-cd ~ && mkdir code
-cd code
-git clone https://github.com/narayana1043/classes
-sudo chmod a+rwx $HOME
-cd ~/code/classes
-sleep 2s
-echo "**********Adding upstream for github*************" 
-git remote add upstream https://github.com/cloudmesh/classes
-echo "Done"
-git remote -v
-echo "**********Fetching upstream *************" 
-git fetch upstream
-echo "**********Rebase with upstream *************" 
-git rebase upstream/master
-git push origin master
-cd ~/
-echo "cloned and rebased with upstream"
-sleep 2s
+#echo "Cloning Big Data class repo"
+#sleep 1s
+#cd ~ && mkdir code
+#cd code
+#git clone https://github.com/narayana1043/classes
+#sudo chmod a+rwx $HOME
+#cd ~/code/classes
+#sleep 2s
+#echo "**********Adding upstream for github*************" 
+#git remote add upstream https://github.com/cloudmesh/classes
+#echo "Done"
+#git remote -v
+#echo "**********Fetching upstream *************" 
+#git fetch upstream
+#echo "**********Rebase with upstream *************" 
+#git rebase upstream/master
+#git push origin master
+#cd ~/
+#echo "cloned and rebased with upstream"
+#sleep 2s
 
 # 7. Ipython and Ipython Notebook setup
 
@@ -247,23 +250,23 @@ echo "************************************"
 sleep 2s
 echo ""
 
-# 11. Cloning other github repos
+## 11. Cloning other github repos
 
-cd ~/code
-echo ''
-echo "************************************"
-echo "cloning the following repos into ~/code"
-echo "************************************"
-echo "1. ubuntu_autosetup"
-echo "2. Bigdata"
-sleep 2s
-git clone https://github.com/narayana1043/ubuntu_autosetup
-chmod 775 -R ubuntu_autosetup
-git clone https://github.com/narayana1043/Bigdata
-echo "************************************"
-echo 'Finished cloning'
-echo "************************************"
-sleep 2s
+#cd ~/code
+#echo ''
+#echo "************************************"
+#echo "cloning the following repos into ~/code"
+#echo "************************************"
+#echo "1. ubuntu_autosetup"
+#echo "2. Bigdata"
+#sleep 2s
+#git clone https://github.com/narayana1043/ubuntu_autosetup
+#chmod 775 -R ubuntu_autosetup
+#git clone https://github.com/narayana1043/Bigdata
+#echo "************************************"
+#echo 'Finished cloning'
+#echo "************************************"
+#sleep 2s
 
 # 12. Installing Google drive for Ubuntu
 
@@ -330,12 +333,12 @@ read -p "Press any key to continue... " -n1 -s
 echo '**********************************************************'
 echo ''
 
-# 6. SSH setup for github
+## 6. SSH setup for github
 
-echo "Generating SSH Keys for github"
-echo "Provide all the information requested"
-ssh-keygen -t rsa -b 4096 -C "narayana1043@gmail.com"
-cat /home/veera/.ssh/id_rsa.pub
+#echo "Generating SSH Keys for github"
+#echo "Provide all the information requested"
+#ssh-keygen -t rsa -b 4096 -C "narayana1043@gmail.com"
+#cat /home/veera/.ssh/id_rsa.pub
 
 
 # Deleting unwanteds
