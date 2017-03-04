@@ -150,6 +150,7 @@ sudo pip install virtualenv
 sudo pip install virtualenvwrapper
 echo '' >> ~/.bashrc
 echo '# Added by Veera' >> ~/.bashrc
+mkvirtualenv env_i524
 echo 'export WORKON_HOME=$HOME/.virtualenvs' >> ~/.bashrc
 echo 'source /usr/local/bin/virtualenvwrapper.sh' >> ~/.bashrc
 source ~/.bashrc
@@ -212,7 +213,7 @@ app_install $(echo $url)
 echo "" >> ~/.bashrc
 echo "# Adding Spark Path" >> ~/.bashrc
 echo "export SPARK_HOME=/opt/spark/" >> ~/.bashrc
-echo "export PYTHONPATH=$SPARK_HOME/python/:$PYTHONPATH" >> ~/.bashrc
+echo "export PYTHONPATH=$SPARK_HOME/python/lib/py4j-0.10.4-src.zip:$PYTHONPATH" >> ~/.bashrc
 source ~/.virtualenvs/env_i524/bin/activate
 ipython profile create pyspark
 deactivate

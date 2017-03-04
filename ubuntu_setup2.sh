@@ -31,12 +31,8 @@ git push origin master
 cd ~/
 echo "cloned and rebased with upstream"
 sleep 2s
-# installing python requirements
-cd ~/code/classes
-# virtaul env activate
-workon env_i524
-pip install -r requirements.txt
-deactivate
+
+
 
 # 11. Cloning other github repos
 
@@ -63,3 +59,12 @@ sleep 2s
 #echo "Provide all the information requested"
 #ssh-keygen -t rsa -b 4096 -C "narayana1043@gmail.com"
 #cat /home/veera/.ssh/id_rsa.pub
+
+# installing python requirements
+# virtaul env activate
+echo "Setup virtual env"
+echo "run"
+cd ~/code/classes
+echo "1. workon env_i524"
+echo "2. pip install -r requirements.txt"
+echo "3. deactivate"
