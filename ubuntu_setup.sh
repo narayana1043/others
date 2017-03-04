@@ -367,7 +367,7 @@ echo "Running apt-get upgrade"
 sudo apt-get upgrade
 sleep 2s
 
- Long Job to be done at the end
+# Long Job to be done at the end
 
 echo "****************************************"
 echo "****************************************"
