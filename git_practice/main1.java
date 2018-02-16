@@ -1,3 +1,3 @@
 this is line one
 added on merger
-added to check ours/theirs --> ours
+added to check ours/theirs --> theirs
