@@ -1,0 +1,44 @@
+1. Inset mode (where you can type like normal text editor. Press i for insert mode)
+
+2. Command mode (where you can give commands to the editor to get things done. Press ESC to enter into command mode)
+
+Most of them below are in the command mode
+
+x - to delete the unwanted character.
+u - to undo the last command and U to undo the whole line
+A - to append test at the end
+:wq - to save the file and exit
+:q! - to trash all changes
+dw - move the cursor to the begining of the word to delete that word
+2w - to move the cursor to the begining of the two words forward
+3e - to mode the cursor to the end of the third word forward
+0 - to move the cursor to the starting of the line
+dw - deletes a word
+d2w - deletes 2 words
+dd - to delete the line
+2dd - to delete 2 lines
+p - puts the previously deleted text after the cursor (Type dd to delete a line and store it in a vim register and p to put the line)
+r - to replace the letter eg. press re to replace the letter with e
+ce - to change until the end of a word (place the cursor on the u in lubw it will delete ubw)
+G - to move you to the bottom of the file
+gg - to move you to the begining of the file. Type the number of the line you want to be on and type gg or G to goto that line
+% - to find a matching 0,],or}
+:s/old/new/g - to subsitute 'new' for 'old' where g is globally
+/ - backward search: n to find the next occurrence and N to search in opposite direction
+? - forward search: n to find the previous occurrence and N to search in the opposite direction
+:! to the shell commands like :!dir, :!ls
+:w - TEST (where TEST is the filename you choose). save the file
+v - starts visual mode for selecting the lines and you can perfrom operation on that like d delete.
+:r - Filename will insert the content into the current file.
+R - to replace more than one character
+y - operator to copy text using v visual mode and p to paste it.
+yw - (copy) yanks is one word.
+o - opens a line below the cursor and starts insert mode
+O - opens a line above the cursor and starts insert mode
+a - insert text after the cursor
+e - command moves to the end of a word
+y - operator yanks (copies) text, p puts (pastes) it.
+R - enters Repalce mode until <ESC> is pressed.
+ctr-w - to jump from window to another.
+
+Type a command :e and press ctrl+D to list all the commands that start with e and press tab to complete the command.
