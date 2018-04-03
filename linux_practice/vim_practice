@@ -12,6 +12,7 @@ A - to append test at the end
 dw - move the cursor to the begining of the word to delete that word
 2w - to move the cursor to the begining of the two words forward
 3e - to mode the cursor to the end of the third word forward
+22b - use b to move backward 2 words.
 0 - to move the cursor to the starting of the line
 dw - deletes a word
 d2w - deletes 2 words
