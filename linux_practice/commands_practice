@@ -1,0 +1,290 @@
+Script started on Mon 02 Apr 2018 09:44:39 PM EDT
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ date
+Mon Apr  2 21:44:49 EDT 2018
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ lx[Ks[K[Kwho
+vmarni   tty7         2018-04-02 11:47 (:0)
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ whoami
+vmarni
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ w
+ 21:46:08 up  6:00,  1 user,  load average: 0.32, 0.31, 0.26
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+vmarni   tty7     :0               11:47   10:00m  4:55   0.22s /sbin/upstart --user
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ man
+What manual page do you want?
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ head vim_practice [C[1@3[1@ 
+head: cannot open '3' for reading: No such file or directory
+==> vim_practice <==
+1. Insert mode (where you can type like normal text editor. Press i for insert mode)
+
+2. Command mode (where you can give commands to the editor to get things done. Press ESC to enter into command mode)
+
+Most of them below are in the command mode
+
+x - to delete the unwanted character.
+u - to undo the last command and U to undo the whole line
+A - to append test at the end
+:wq - to save the file and exit
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ head 3 vim_practice [1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C3
+==> vim_practice <==
+1. Insert mode (where you can type like normal text editor. Press i for insert mode)
+
+2. Command mode (where you can give commands to the editor to get things done. Press ESC to enter into command mode)
+
+Most of them below are in the command mode
+
+x - to delete the unwanted character.
+u - to undo the last command and U to undo the whole line
+A - to append test at the end
+:wq - to save the file and exit
+head: cannot open '3' for reading: No such file or directory
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ head vim_practice 33 vim_practice [C[1@-
+1. Insert mode (where you can type like normal text editor. Press i for insert mode)
+
+2. Command mode (where you can give commands to the editor to get things done. Press ESC to enter into command mode)
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ tail 0[K-1 vim_practice 
+Type a command :e and press ctrl+D to list all the commands that start with e and press tab to complete the command.
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ pwd
+/home/vmarni/PycharmProjects/others/linux_practice
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ ls -latd ~/
+drwxr-xr-x 40 vmarni vmarni 4096 Apr  2 11:47 [0m[01;34m/home/vmarni/[0m
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ ls -latd ~/[K[K[K[K[K[Kt[K
+total 8
+-rw-rw-r-- 1 vmarni vmarni 4096 Apr  2 21:49 commands_practice
+-rw-rw-r-- 1 vmarni vmarni 2363 Apr  2 21:40 vim_practice
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ ls -lt
+total 8
+-rw-rw-r-- 1 vmarni vmarni 4096 Apr  2 21:49 commands_practice
+-rw-rw-r-- 1 vmarni vmarni 2363 Apr  2 21:40 vim_practice
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ ls -lta
+total 16
+-rw-rw-r-- 1 vmarni vmarni 4096 Apr  2 21:49 commands_practice
+drwxrwxr-x 2 vmarni vmarni 4096 Apr  2 21:44 [0m[01;34m.[0m
+-rw-rw-r-- 1 vmarni vmarni 2363 Apr  2 21:40 vim_practice
+drwxrwxr-x 8 vmarni vmarni 4096 Apr  2 21:31 [01;34m..[0m
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ ls -lta[1Paua[C
+total 16
+drwxrwxr-x 2 vmarni vmarni 4096 Apr  2 21:44 [0m[01;34m.[0m
+drwxrwxr-x 8 vmarni vmarni 4096 Apr  2 21:31 [01;34m..[0m
+-rw-rw-r-- 1 vmarni vmarni 4096 Apr  2 21:45 commands_practice
+-rw-rw-r-- 1 vmarni vmarni 2363 Apr  2 21:40 vim_practice
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ touch vim_practice 
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ touch vim_practice [12Pls -lua
+total 16
+drwxrwxr-x 2 vmarni vmarni 4096 Apr  2 21:44 [0m[01;34m.[0m
+drwxrwxr-x 8 vmarni vmarni 4096 Apr  2 21:31 [01;34m..[0m
+-rw-rw-r-- 1 vmarni vmarni 4096 Apr  2 21:45 commands_practice
+-rw-rw-r-- 1 vmarni vmarni 2363 Apr  2 21:50 vim_practice
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ ls -lua[1Pata
+total 16
+-rw-rw-r-- 1 vmarni vmarni 2363 Apr  2 21:50 vim_practice
+-rw-rw-r-- 1 vmarni vmarni 4096 Apr  2 21:49 commands_practice
+drwxrwxr-x 2 vmarni vmarni 4096 Apr  2 21:44 [0m[01;34m.[0m
+drwxrwxr-x 8 vmarni vmarni 4096 Apr  2 21:31 [01;34m..[0m
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ touch commands_practice 
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ touch commands_practice ls -lta[K
+total 16
+-rw-rw-r-- 1 vmarni vmarni 4096 Apr  2 21:51 commands_practice
+-rw-rw-r-- 1 vmarni vmarni 2363 Apr  2 21:50 vim_practice
+drwxrwxr-x 2 vmarni vmarni 4096 Apr  2 21:44 [0m[01;34m.[0m
+drwxrwxr-x 8 vmarni vmarni 4096 Apr  2 21:31 [01;34m..[0m
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ mk dir [K[K[K[K[Kdir ./temp
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ rmdir ./temp/
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ wc vim_practice 
+  44  500 2363 vim_practice
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ read
+hi
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ echo $read
+
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ who | wc -l
+1
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ who
+vmarni   tty7         2018-04-02 11:47 (:0)
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ who | wc
+      1       5      44
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ sr[Kort -n
+1
+2
+5
+4
+8
+9
+4
+5
+6
+
+
+1
+2
+4
+4
+5
+5
+6
+8
+9
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ sort -nrn
+1
+2
+3
+4
+5
+6
+67
+8
+9
+67
+9
+8
+6
+5
+4
+3
+2
+1
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ sort -rnd
+sort: options '-dn' are incompatible
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ sort -rnd[1Pd
+veera
+veera
+veera marni
+veera marni
+veera
+veera
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ sort -rdu
+veera
+veera
+veera
+veera_marni
+
+veera_marni
+veera
+
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ mre[K[Kore
+
+Usage:
+ more [options] <file>...
+
+A file perusal filter for CRT viewing.
+
+Options:
+ -d          display help instead of ringing bell
+ -f          count logical rather than screen lines
+ -l          suppress pause after form feed
+ -c          do not scroll, display text and clean line ends
+ -p          do not scroll, clean screen and display text
+ -s          squeeze multiple blank lines into one
+ -u          suppress underlining
+ -<number>   the number of lines per screenful
+ +<number>   display file beginning from line number
+ +/<string>  display file beginning from search string match
+ -V          display version information and exit
+
+For more details see more(1).
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ more vim_practice 
+1. Insert mode (where you can type like normal text editor. Press i for insert mode)
+
+2. Command mode (where you can give commands to the editor to get things done. Press ESC to enter into command mode)
+
+Most of them below are in the command mode
+
+x - to delete the unwanted character.
+u - to undo the last command and U to undo the whole line
+A - to append test at the end
+:wq - to save the file and exit
+:q! - to trash all changes
+dw - move the cursor to the begining of the word to delete that word
+2w - to move the cursor to the begining of the two words forward
+3e - to mode the cursor to the end of the third word forward
+0 - to move the cursor to the starting of the line
+dw - deletes a word
+d2w - deletes 2 words
+dd - to delete the line
+2dd - to delete 2 lines
+p - puts the previously deleted text after the cursor (Type dd to delete a line and store it in a vim register and p to put the line)
+r - to replace the letter eg. press re to replace the letter with e
+ce - to change until the end of a word (place the cursor on the u in lubw it will delete ubw)
+G - to move you to the bottom of the file
+gg - to move you to the begining of the file. Type the number of the line you want to be on and type gg or G to goto that line
+% - to find a matching 0,],or}
+:s/old/new/g - to subsitute 'new' for 'old' where g is globally
+/ - backward search: n to find the next occurrence and N to search in opposite direction
+? - forward search: n to find the previous occurrence and N to search in the opposite direction
+:! to the shell commands like :!dir, :!ls
+:w - TEST (where TEST is the filename you choose). save the file
+v - starts visual mode for selecting the lines and you can perfrom operation on that like d delete.
+:r - Filename will insert the content into the current file.
+R - to replace more than one character
+y - operator to copy text using v visual mode and p to paste it.
+yw - (copy) yanks is one word.
+o - opens a line below the cursor and starts insert mode
+O - opens a line above the cursor and starts insert mode
+a - insert text after the cursor
+e - command moves to the end of a word
+y - operator yanks (copies) text, p puts (pastes) it.
+R - enters Repalce mode until <ESC> is pressed.
+ctr-w - to jump from window to another.
+[7m--More--(95%)[27m[K
+[7m--More--(95%)[27mType a command :e and press ctrl+D to list all the commands that start with e and press tab to complete the command.
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ 
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ grep -i delte[K[K[Klete vim_practice 
+x - to [01;31m[Kdelete[m[K the unwanted character.
+dw - move the cursor to the begining of the word to [01;31m[Kdelete[m[K that word
+dw - [01;31m[Kdelete[m[Ks a word
+d2w - [01;31m[Kdelete[m[Ks 2 words
+dd - to [01;31m[Kdelete[m[K the line
+2dd - to [01;31m[Kdelete[m[K 2 lines
+p - puts the previously [01;31m[Kdelete[m[Kd text after the cursor (Type dd to [01;31m[Kdelete[m[K a line and store it in a vim register and p to put the line)
+ce - to change until the end of a word (place the cursor on the u in lubw it will [01;31m[Kdelete[m[K ubw)
+v - starts visual mode for selecting the lines and you can perfrom operation on that like d [01;31m[Kdelete[m[K.
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ grep -i delete vim_practice [C[1@v
+1. Insert mode (where you can type like normal text editor. Press i for insert mode)
+
+2. Command mode (where you can give commands to the editor to get things done. Press ESC to enter into command mode)
+
+Most of them below are in the command mode
+
+u - to undo the last command and U to undo the whole line
+A - to append test at the end
+:wq - to save the file and exit
+:q! - to trash all changes
+2w - to move the cursor to the begining of the two words forward
+3e - to mode the cursor to the end of the third word forward
+0 - to move the cursor to the starting of the line
+r - to replace the letter eg. press re to replace the letter with e
+G - to move you to the bottom of the file
+gg - to move you to the begining of the file. Type the number of the line you want to be on and type gg or G to goto that line
+% - to find a matching 0,],or}
+:s/old/new/g - to subsitute 'new' for 'old' where g is globally
+/ - backward search: n to find the next occurrence and N to search in opposite direction
+? - forward search: n to find the previous occurrence and N to search in the opposite direction
+:! to the shell commands like :!dir, :!ls
+:w - TEST (where TEST is the filename you choose). save the file
+:r - Filename will insert the content into the current file.
+R - to replace more than one character
+y - operator to copy text using v visual mode and p to paste it.
+yw - (copy) yanks is one word.
+o - opens a line below the cursor and starts insert mode
+O - opens a line above the cursor and starts insert mode
+a - insert text after the cursor
+e - command moves to the end of a word
+y - operator yanks (copies) text, p puts (pastes) it.
+R - enters Repalce mode until <ESC> is pressed.
+ctr-w - to jump from window to another.
+
+Type a command :e and press ctrl+D to list all the commands that start with e and press tab to complete the command.
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ grep -vi delete vim_practice [1@c
+35
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ grep -cvi delete vim_practice [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ki data ~/PycharmProjects/datat[Kscience_challenges/
+grep: /home/vmarni/PycharmProjects/datascience_challenges/: Is a directory
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ ls -ltra[K | [1@~[1@/[1@P[1@y[14@charmProjects/[1@d[1@a[2@ta[1@s[18@cience_challenges/[1@ [C[Cgre
+grep       grepdiff   gresource  
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ ls -ltr ~/PycharmProjects/datascience_challenges/ | gre
+grep       grepdiff   gresource  
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ ls -ltr ~/PycharmProjects/datascience_challenges/ | grep -i delete[K[K[K[K[Kata
+drwxrwxr-x 2 vmarni vmarni 4096 Dec 30 19:41 cars_[01;31m[Kdata[m[K_challenge
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ ls -ltr ~/PycharmProjects/datascience_challenges/ | grep -i data[1@n
+[32m[K3[m[K[36m[K:[m[Kdrwxrwxr-x 2 vmarni vmarni 4096 Dec 30 19:41 cars_[01;31m[Kdata[m[K_challenge
+]0;vmarni@vmarni-M14xR2: ~/PycharmProjects/others/linux_practice[01;32mvmarni@vmarni-M14xR2[00m:[01;34m~/PycharmProjects/others/linux_practice[00m (master)$ exit
+exit
+
+Script done on Mon 02 Apr 2018 10:54:51 PM EDT
