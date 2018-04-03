@@ -1,4 +1,4 @@
-1. Inset mode (where you can type like normal text editor. Press i for insert mode)
+1. Insert mode (where you can type like normal text editor. Press i for insert mode)
 
 2. Command mode (where you can give commands to the editor to get things done. Press ESC to enter into command mode)
 
@@ -24,8 +24,8 @@ G - to move you to the bottom of the file
 gg - to move you to the begining of the file. Type the number of the line you want to be on and type gg or G to goto that line
 % - to find a matching 0,],or}
 :s/old/new/g - to subsitute 'new' for 'old' where g is globally
-/ - backward search: n to find the next occurrence and N to search in opposite direction
-? - forward search: n to find the previous occurrence and N to search in the opposite direction
+/ - forward search: n to find the next occurrence and N to search in opposite direction
+? - backward search: n to find the previous occurrence and N to search in the opposite direction
 :! to the shell commands like :!dir, :!ls
 :w - TEST (where TEST is the filename you choose). save the file
 v - starts visual mode for selecting the lines and you can perfrom operation on that like d delete.
