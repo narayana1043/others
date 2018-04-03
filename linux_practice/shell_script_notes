@@ -1,0 +1,24 @@
+A shell script is a program that issues or exceutes a sequence of Unix commands.
+Avoid using names that are recognized as unix commands a names of shell scripts.
+Shell scripts can be executed in 2 different ways.
+	- sh ./filename
+	or
+	- chmod u+x filename && ./filename
+Special shell commands
+	- $? The exit status of the last executed command.
+	- $$ The process number of the current shell.
+The # symbol - This is the comment symbol on execution this line will be ignored.
+The escape mechanism special characters like * if needed to be used in the shell scripts then the escape mechanism "\" should be used.
+When a  command is enclosed within back quotes, the command is replaced by the output it produces, this is called command subsitution.
+	- echo `date`
+The exit command is used to exit the shell script and tell us the exit status of the shell. 
+	- "0" is a success
+	- "1" is a failure
+Arithmetic Operators and Expressions
+	- +, -, * and  /
+	- expr is a command that helps in getting the numerical value of the digital strings. Note that there should not be spaces between the expr, the number and the arithmetic operators.
+Conditional Execution Operators
+	- command excution after successful or failure of another command.
+	- && ex: $grep good gems && echo "pattern found"
+	- || ex: $grep good gems || echo "pattern found"
+
